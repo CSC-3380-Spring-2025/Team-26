@@ -4,7 +4,7 @@ Project Manager: [Name] ([GitHub Name])\
 Communications Lead: [Name] ([GitHub Name])\
 Git Master: [Name] ([GitHub Name])\
 Design Lead: [Name] ([GitHub Name])\
-Quality Assurance Tester: [Name] ([GitHub Name])
+Quality Assurance Tester: [Nicholas Stahl] ([1nvar1])
 
 # About Our Software
 
