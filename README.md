@@ -4,7 +4,7 @@ Project Manager: [Name] ([GitHub Name])\
 Communications Lead: Jonathan Hebert (JonHebert)\
 Git Master: Julius Grady Jr (bluejay6160)\
 Design Lead: Andres Vega (MonkeyDChico)\
-Quality Assurance Tester: [Nicholas Stahl] ([1nvar1])
+Quality Assurance Tester: Nicholas Stahl (1nvar1)
 
 # About Our Software
 
