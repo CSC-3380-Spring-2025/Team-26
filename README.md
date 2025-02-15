@@ -1,7 +1,7 @@
 # [Name of the Project] : [Team Number]
 # Members
 Project Manager: [Name] ([GitHub Name])\
-Communications Lead: [Name] ([GitHub Name])\
+Communications Lead: [Jonathan Hebert] ([JonHebert])\
 Git Master: [Name] ([GitHub Name])\
 Design Lead: [Name] ([GitHub Name])\
 Quality Assurance Tester: [Nicholas Stahl] ([1nvar1])
