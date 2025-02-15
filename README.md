@@ -2,7 +2,7 @@
 # Members
 Project Manager: [Name] ([GitHub Name])\
 Communications Lead: [Name] ([GitHub Name])\
-Git Master: [Name] ([GitHub Name])\
+Git Master: Julius Grady Jr (bluejay6160)\
 Design Lead: Andres Vega (MonkeyDChico)\
 Quality Assurance Tester: [Nicholas Stahl] ([1nvar1])
 
