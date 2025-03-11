@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# [Name of the Project] : [Team Number]
+# Members
+Project Manager: [Name] ([GitHub Name])\
+Communications Lead: Jonathan Hebert (JonHebert)\
+Git Master: Julius Grady Jr (bluejay6160)\
+Design Lead: Andres Vega (MonkeyDChico)\
+Quality Assurance Tester: Nicholas Stahl (1nvar1)
+
+# About Our Software
+
+Describe a little about what the project is about here.
+## Platforms Tested on
+- MacOS
+- Android
+- iOS
+- Linux
+- Windows
+# Important Links
+Kanban Board: [link]\
+Designs: https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg \
+Styles Guide(s): [link]
+
+# How to Run Dev and Test Environment
+
+## Dependencies
+- List all dependencies here
+- Don't forget to include versions
+### Downloading Dependencies
+Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in. 
+
+## Commands
+Describe how the commands and process to launch the project on the main branch in such a way that anyone working on the project knows how to check the affects of any code they add.
+
+```sh
+Example terminal command syntax
+```
+
+It is very common in these sections to see code in peculiar boxes to help them stand out. Check the markdown section of the Project Specifications to see how to add more / customize these.
+
+```python
+def code_highlight_example(m: int, m: float, s: str) -> str:
+	return s + str(n*m)
+```
+
+```java
+public static void main(String[] args){
+	System.out.println("Hello, World!");
+}
+```
+
+```c#
+static void Main(){
+	Console.WriteLine("Hello, World!");
+}
+```
+>>>>>>> 3ee560270c63ab5689099fcf3a0b1c4721623b01
