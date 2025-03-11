@@ -17,7 +17,7 @@ Describe a little about what the project is about here.
 - Windows
 # Important Links
 Kanban Board: [link]\
-Designs: https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg\
+Designs: https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg \
 Styles Guide(s): [link]
 
 # How to Run Dev and Test Environment
