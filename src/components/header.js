@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
+import React from 'react';
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="bg-blue-600 text-white">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
+        <a href="/" className="text-2xl font-bold">
           FoodieFinds
-        </Link>
+        </a>
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <Link href="/">Home</Link>
+              <a href="/">Home</a>
             </li>
             <li>
-              <Link href="/profile">Profile</Link>
+              <a href="/profile">Profile</a>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <a href="/about">About</a>
             </li>
           </ul>
         </nav>
@@ -25,4 +25,3 @@ const Header = () => {
   );
 };
 
-export default Header;
