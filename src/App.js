@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { app, analytics } from "./firebase-config";  // Import Firebase app
+import { App, analytics } from "./firebase-config";  // Import Firebase app
 
 function App() {
   useEffect(() => {
