@@ -1,6 +1,6 @@
 // src/firebase-config.js
 
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/App';
 import { getAnalytics } from 'firebase/analytics';
 
 // Your Firebase configuration
