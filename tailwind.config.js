@@ -2,9 +2,7 @@
 module.exports = {
   darkMode: ['class'], // dark mode strategy
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',      // path for pages
-    './components/**/*.{js,ts,jsx,tsx,mdx}', // path for components
-    './App/**/*.{js,ts,jsx,tsx,mdx}',       // path for App
+    './src/**/*.{js,ts,jsx,tsx}',  // this is perfect
   ],
   theme: {
     extend: {
