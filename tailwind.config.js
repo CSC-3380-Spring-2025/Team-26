@@ -6,8 +6,8 @@ module.exports = {
     content: [
       './pages/**/*.{js,ts,jsx,tsx,mdx}',
       './components/**/*.{js,ts,jsx,tsx,mdx}',
-      './app/**/*.{js,ts,jsx,tsx,mdx}',
-      'app/**/*.{ts,tsx}',
+      './App/**/*.{js,ts,jsx,tsx,mdx}',
+      'App/**/*.{ts,tsx}',
       'components/**/*.{ts,tsx}',
     ],
     theme: {
