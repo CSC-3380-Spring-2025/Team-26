@@ -1,18 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import * as React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 
-import { Button } from "@/components/ui/button"
+interface IAppProps {}
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
-  )
-}
+const App: React.FunctionComponent<IAppProps> = (props) => {
+  return <RouterProvider router={router} />;
+};
 
 export default App
