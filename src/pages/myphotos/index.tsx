@@ -1,10 +1,15 @@
+import Layout from '@/components/layout';
 import * as React from 'react';
 
 interface IMyPhotosProps {
 }
 
 const MyPhotos: React.FunctionComponent<IMyPhotosProps> = (props) => {
-    return <div>My photos</div>;
+    return (
+    <Layout>
+        <div>My Posts</div>
+    </Layout>
+    );
 };
 
 export default MyPhotos;
