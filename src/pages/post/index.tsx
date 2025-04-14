@@ -1,3 +1,4 @@
+import FileUploader from '@/components/fileUploader';
 import Layout from '@/components/layout';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
@@ -30,6 +31,7 @@ const CreatePost: React.FunctionComponent<ICreatePostProps> = (props) => {
                                 <Label className="mb-4" htmlFor="photo">
                                     Photos
                                 </Label>
+                                <FileUploader />
                             </div>
                             <Button className="mt-8 w-32" type="submit">
                                 Post
