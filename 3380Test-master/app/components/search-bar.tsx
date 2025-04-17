@@ -18,10 +18,12 @@ const SearchBar: React.FC = () => {
     console.log("Searching for:", search);
     console.log("User is logged in:", !!user);
 
+    const encodedQuery = encodeURIComponent(search.trim());
+
     if (user) {
-      router.push("/aftersearch-pageLdin");
+      router.push(`/aftersearch-pageLdin?query=${encodedQuery}`);
     } else {
-      router.push("/aftersearch-pageLdout");
+      router.push(`/aftersearch-pageLdout?query=${encodedQuery}`);
     }
   };
 
