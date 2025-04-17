@@ -3,6 +3,8 @@ import { useUserAuth } from '@/context/userAuthContext';
 import { getPostByUserId } from '@/repository/post.service';
 import { DocumentResponse, Post } from '@/types';
 import * as React from 'react';
+import { HeartIcon } from "lucide-react";
+
 
 interface IMyPhotosProps {
 }
@@ -10,7 +12,7 @@ interface IMyPhotosProps {
 const MyPhotos: React.FunctionComponent<IMyPhotosProps> = (props) => {
 
     const { user } = useUserAuth()
-    const [date, setData ] = React.useState<DocumentResponse[]>([]);
+    const [data, setData ] = React.useState<DocumentResponse[]>([]);
 
     const getAllPost = async (id:string) => {
         try {
@@ -41,9 +43,40 @@ const MyPhotos: React.FunctionComponent<IMyPhotosProps> = (props) => {
         }
       }, [user]);
 
+      const renderPost = () => {
+        return data.map((item) => {
+          return (
+            <div key={item.photos[0].uuid} className="relative">
+              <div className="absolute group transition-all duration-200 bg-transparent hover:bg-slate-950 hover:bg-opacity-75 top-0 bottom-0 left-0 right-0 w-full h-full">
+                <div className="flex flex-col justify-center items-center w-full h-full">
+                  <HeartIcon className="hidden group-hover:block fill-white" />
+                  <div className="hidden group-hover:block text-white">
+                    {item.likes} likes
+                  </div>
+                </div>
+              </div>
+              <img
+                src={`${item.photos[0].cdnUrl}/-/progressive/yes/-/scale_crop/300x300/center/`}
+              />
+            </div>
+          );
+        });
+      };
+
     return (
     <Layout>
-        <div>My Posts</div>
+        <div className="flex justify-center">
+        <div className="border max-w-3xl w-full">
+          <h3 className="bg-slate-800 text-white text-center text-lg p-2">
+            My Photos
+          </h3>
+          <div className="p-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {data ? renderPost() : <div>...Loading</div>}
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
     );
 };
