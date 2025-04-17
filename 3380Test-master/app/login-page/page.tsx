@@ -2,14 +2,15 @@
 
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "lib/firebase";
+import { auth, db } from "lib/firebase";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import Header from "../components/header";
 
 export default function Login() {
   const router = useRouter();
 
-  const [email, setEmail] = useState("");
+  const [userOrEmail, setUserOrEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
@@ -18,6 +19,24 @@ export default function Login() {
     setError("");
 
     try {
+      let email = userOrEmail;
+
+      // 🔍 If input doesn't include "@" assume it's a username
+      if (!userOrEmail.includes("@")) {
+        const usersRef = collection(db, "users");
+        const q = query(usersRef, where("username", "==", userOrEmail));
+        const querySnapshot = await getDocs(q);
+
+        if (querySnapshot.empty) {
+          setError("Username not found.");
+          return;
+        }
+
+        const userDoc = querySnapshot.docs[0];
+        email = userDoc.data().email;
+      }
+
+      // 🧠 Use resolved email to log in
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/postlogin-homepage");
     } catch (err: any) {
@@ -36,25 +55,31 @@ export default function Login() {
           onSubmit={handleLogin}
           className="max-w-md mx-auto bg-white p-6 rounded-md shadow-md border"
         >
+          {/* Username or Email */}
           <div className="mb-4">
-            <label className="block mb-1 font-semibold text-black">Email</label>
+            <label className="block mb-1 font-semibold text-black">
+              Username or Email
+            </label>
             <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-black px-4 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-400"
-              placeholder="Enter your email"
+              type="text"
+              value={userOrEmail}
+              onChange={(e) => setUserOrEmail(e.target.value)}
+              className="w-full border border-black px-4 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-400 text-black"
+              placeholder="Enter your username or email"
+              required
             />
           </div>
 
+          {/* Password */}
           <div className="mb-6">
             <label className="block mb-1 font-semibold text-black">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border border-black px-4 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-400"
+              className="w-full border border-black px-4 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-400 text-black"
               placeholder="Enter your password"
+              required
             />
           </div>
 

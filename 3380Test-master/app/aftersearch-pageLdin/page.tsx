@@ -57,7 +57,7 @@ const AfterSearchPageLdin: React.FC = () => {
               <img
                 src={post.image}
                 alt={post.meal}
-                className="mt-2 w-full rounded-md"
+                className="w-40 h-40 object-cover rounded-md mt-2"
               />
             </div>
           ))
