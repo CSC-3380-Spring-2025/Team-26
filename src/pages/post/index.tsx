@@ -7,6 +7,7 @@ import { useUserAuth } from '@/context/userAuthContext';
 import { FileEntry, Post } from '@/types';
 import * as React from 'react';
 
+
 interface ICreatePostProps {
 }
 
@@ -29,8 +30,23 @@ const CreatePost: React.FunctionComponent<ICreatePostProps> = (props) => {
 
     const handleSubmit = async(e: React.MouseEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Uploaded File Entry : ", fileEntry);
+        console.log("Uploaded File Entry : ", fileEntry.files);
         console.log("The create post is : ", post);
+
+        const photoMeta = fileEntry.files.map((file) => ({
+            cdnUrl: file.cdnUrl,
+            uuid: file.uuid,
+        }));
+
+        if (user != null) {
+            const newPost: Post = {
+            ...post,
+            userId: user.uid || null,
+            photos: photoMeta,
+            };
+            console.log("The final post is  : ", newPost);
+
+  }
     };
 
     return (
