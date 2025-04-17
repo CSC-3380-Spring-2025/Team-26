@@ -36,14 +36,17 @@ const AfterSearchPageLdin: React.FC = () => {
     <div className="min-h-screen bg-white">
       <HeaderALog />
 
+      {/* Search Bar */}
       <div className="mt-8 px-4 justify-center">
         <SearchBar />
       </div>
 
+      {/* Page Title */}
       <h2 className="text-2xl font-bold text-center text-black mt-10 mb-6">
         Related Post{results.length !== 1 ? "s" : ""}
       </h2>
 
+      {/* Results Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-6 pb-10">
         {results.length > 0 ? (
           results.map((post, i) => (
@@ -51,9 +54,26 @@ const AfterSearchPageLdin: React.FC = () => {
               key={i}
               className="bg-gray-100 rounded-md shadow-md p-4 text-black"
             >
-              <h3 className="font-bold">{post.restaurant}</h3>
-              <p>Meal: {post.meal}</p>
-              <p>Rating: {post.rating}</p>
+              {/* Restaurant */}
+              <h3 className="font-bold text-lg">{post.restaurant}</h3>
+
+              {/* Posted by */}
+              <p className="text-sm text-gray-600 italic mb-1">
+                Posted by: {post.user?.username || "Unknown"}
+              </p>
+
+              {/* Meal & Rating */}
+              <p className="text-sm text-gray-800">Meal: {post.meal}</p>
+              <p className="text-sm text-gray-800">Rating: {post.rating}</p>
+
+              {/* Caption */}
+              {post.caption && (
+                <p className="text-sm text-gray-700 mt-2 italic">
+                  "{post.caption}"
+                </p>
+              )}
+
+              {/* Image */}
               <img
                 src={post.image}
                 alt={post.meal}
