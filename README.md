@@ -85,7 +85,7 @@ Describe a little about what the project is about here.
 - Windows
 # Important Links
 Kanban Board: [[link]](https://goonplus.atlassian.net/jira/software/projects/WEB/boards/1?assignee=unassigned%2C712020%3A7103b0c3-a2b3-4796-9bd8-d9c42a5a8677%2C712020%3A054998ab-77c7-4f06-81e1-645235885925%2C712020%3A2aba1133-1f8f-4bb1-95f6-a8eee72d2fb1%2C712020%3Ac5baf555-ad32-4a57-b0a6-af088fde18c5%2C712020%3A0982c513-21a1-4415-a114-a3e0a1b5fd9e&atlOrigin=eyJwIjoiaiIsImkiOiJjNmNmYzUwOGU1NzQ0ZTE3OWE3MTk5YWMyMTcwODZiNiJ9&cloudId=dddcd024-c7e0-42cd-bb29-30cf14e99065)\
-Designs: https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg \
+Designs: [[link]](https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg) 
 Styles Guide(s): [[link]](https://code-style-guide.tiiny.site/?mode=suggestions)
 
 
