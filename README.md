@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
-# [FoodieFinds] : [Team 26]
+# [FoodieFinds] : [Pizza Time]
 # Members
 Project Manager: Jaroslav Aupart (ysl.ja)\
 Communications Lead: Jonathan Hebert (JonHebert)\
