@@ -21,6 +21,7 @@ After downloading the repository, extract the folder and open it in an IDE of yo
 1. cd .\3380Test-Master\
 2. npm install
 3. npm run dev
+4. Once dev starts running, follow the localhost:3000 link to the current working build of the website.
 
 ## Dependencies
 TypeScript
