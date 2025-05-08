@@ -1,4 +1,5 @@
 import type React from "react";
+import Link from "next/link";
 
 // WeeklyTournament Component: Displays information about the weekly tournament
 const WeeklyTournament: React.FC = () => {
@@ -11,9 +12,12 @@ const WeeklyTournament: React.FC = () => {
       <p className="text-black mb-2">Vote for your favorite meals in our weekly tournament!</p>
 
       {/* Join Tournament Button */}
-      <button className="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+      <Link href = "/weekly-tournypage">
+        <button className="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
         Join Tournament
-      </button>
+      
+        </button>
+      </Link>
     </div>
   );
 };
