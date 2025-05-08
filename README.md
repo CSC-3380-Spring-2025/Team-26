@@ -8,7 +8,7 @@ Quality Assurance Tester: Nicholas Stahl (1nvar1)
 
 # About Our Software
 
-Describe a little about what the project is about here.
+A web app where people can post what they get at certain foods places (fast food, restaurants, dessert places, etc.), and others can look at post related to the place they’re at or looking to go, to use as a suggestions 
 ## Platforms Tested on
 - Windows
 # Important Links
@@ -17,55 +17,28 @@ Designs: [[link]](https://share.balsamiq.com/c/bK1gjTXJcbhmMn5oGNaYGe.jpg) \
 Styles Guide(s): [[link]](https://code-style-guide.tiiny.site/?mode=suggestions)
 
 # How to Run Dev and Test Environment
+After downloading the repository, extract the folder and open it in an IDE of your choosing. After opening it in your IDE, open terminal and run the following commands:
+1. cd .\3380Test-Master\
+2. npm install
+3. npm run dev
 
 ## Dependencies
-- List all dependencies here
-- Don't forget to include versions
+TypeScript
+Tailwind CSS
+HTML
+React.js
+GoogleAPI
+Node.js with Express.js 
+Firebase
+
 ### Downloading Dependencies
-Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in. 
+React.js: https://react.dev/learn/installation \
+Tailwind CSS: https://tailwindcss.com/docs/installation/using-vite \
+Google API: https://developers.google.com/workspace/drive/api/guides/manage-downloads \
+express.js: https://expressjs.com/en/starter/installing.html
 
 ## Commands
-Describe how the commands and process to launch the project on the main branch in such a way that anyone working on the project knows how to check the affects of any code they add.
+
 
 ```sh
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm install
-npm run dev
-After run dev clear cache if error with: Remove-Item -Recurse -Force .next
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-Dependencies
-List all dependencies here
-Don't forget to include versions
-Downloading Dependencies
-Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in.
-
-Commands
-Describe how the commands and process to launch the project on the main branch in such a way that anyone working on the project knows how to check the affects of any code they add.
