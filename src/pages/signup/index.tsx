@@ -54,7 +54,7 @@ const Signup: React.FunctionComponent<ISignupProps> = () => {
                         <Card>
                             <form onSubmit={handleSubmit}>
                                 <CardHeader className="space-y-1">
-                                    <CardTitle className="text-2xl text-center mb-4">DiddyJuice Finder</CardTitle>
+                                    <CardTitle className="text-2xl text-center mb-4">TheFoodBook</CardTitle>
                                     <CardDescription>
                                         Enter your email below to create your account
                                     </CardDescription>

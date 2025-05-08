@@ -35,7 +35,7 @@ const MyPhotos: React.FunctionComponent<IMyPhotosProps> = (props) => {
         } catch (error) {
             console.log(error);
         }
-    }
+    };
 
     React.useEffect(() => {
         if (user) {

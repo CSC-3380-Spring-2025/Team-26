@@ -52,7 +52,7 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                 <Card>
                     <form onSubmit={handleSubmit}>
                         <CardHeader className="space-y-1">
-                            <CardTitle className="text-2xl text-center mb-4">Diddy Finder</CardTitle>
+                            <CardTitle className="text-2xl text-center mb-4">TheFoodBook Login</CardTitle>
                             <CardDescription>
                                 Enter your email below to create your account
                             </CardDescription>
@@ -90,7 +90,7 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                             </div>
                             {/* Password Input */}
                             <div className="grid gap-2">
-                                <Label htmlFor="password">Social Security #</Label>
+                                <Label htmlFor="password">Password</Label>
                                 <Input
                                     id="password"
                                     type="password"
